@@ -25,4 +25,18 @@ int main() {
         outfile << baris << endl;
     }
     // selesai dalam menulis sekarang tutup file
+    outfile.close();
+
+    // membuka file dalam mode membaca
+    ifstream infile;
+    // menunjuk ke sebuah file
+    infile.open("contohfile.txt");
+
+    cout << endl << ">= Membuka adn membaca file " << endl;
+    // jika file ada maka 
+    if (infile.is_open())
+    {
+        // melakukan perulangan setiap baris
+    }
+    
 }
